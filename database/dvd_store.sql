@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 12, 2018 at 10:18 AM
+-- Generation Time: Jul 21, 2018 at 03:06 AM
 -- Server version: 10.1.32-MariaDB
 -- PHP Version: 7.2.5
 
@@ -78,8 +78,9 @@ CREATE TABLE `tbl_customer` (
 
 INSERT INTO `tbl_customer` (`id_customer`, `id_role`, `customer_name`, `customer_email`, `customer_password`, `country`, `city`, `phone_number`, `address`, `image`) VALUES
 (2, 1, 'lukman arief', 'lukman@gmail.com', 'lukman21', 'bondowoso', 'indonesia', '08912834245', 'bondowoso ex malang', 'foto-profil2.png'),
-(3, 1, 'man', 'man@gmail.com', 'man123', 'malang', 'indonesia', '085649806398', 'jl. gadang', 'man.jpg'),
-(4, 1, 'Faldi', 'Faldi767@gmail.com', '123', 'Indonesia', 'Malang', '085804805750', 'Sumpil', 'smoke_anonymous_steam_avatars.jpg');
+(3, 2, 'man', 'man@gmail.com', 'man123', 'malang', 'indonesia', '085649806398', 'jl. gadang', 'man.jpg'),
+(4, 1, 'Faldi', 'Faldi767@gmail.com', '123', 'Indonesia', 'Malang', '085804805750', 'Sumpil', 'smoke_anonymous_steam_avatars.jpg'),
+(5, 2, 'diana', 'diana@gmail.com', 'diana1234', '', 'indonesia', '081233569286', '                                                                                jl. raya sawojajar no 31                                                                         ', '');
 
 -- --------------------------------------------------------
 
@@ -307,7 +308,7 @@ ALTER TABLE `tbl_cart`
 -- AUTO_INCREMENT for table `tbl_customer`
 --
 ALTER TABLE `tbl_customer`
-  MODIFY `id_customer` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_customer` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `tbl_order`

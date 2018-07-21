@@ -22,7 +22,7 @@
                         <tbody>
                         <?php
                             $i = 0;
-                            $get_cat = "select tbl_product_category.id_cat_p,tbl_product_category.cat_p_title,tbl_product_category.cat_p_desc from tbl_product_Category";
+                            $get_cat = "select * from tbl_product_category";
                             $run_qr = mysqli_query($connection,$get_cat);
                             while($row_pro=mysqli_fetch_array($run_qr)){
                                 $cat_id = $row_pro['id_cat_p'];

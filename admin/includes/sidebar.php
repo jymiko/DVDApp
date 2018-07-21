@@ -29,6 +29,12 @@
                                 <li><a href="index.php?view_user">View User</a></li>
                             </ul>
                         </li>
+                        <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="far fa-images"></i><span class="hide-menu">Transaksi</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="index.php?view_transaksi">View Transaksi</a></li>
+                                <li><a href="index.php?view_pembayaran">Pembayaran</a></li>
+                            </ul>
+                        </li>
                         </li>
                     </ul>
                 </nav>

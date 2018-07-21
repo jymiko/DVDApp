@@ -129,6 +129,12 @@
                     if(isset($_GET['delete_user'])){
                         include("delete_user.php");
                     }
+                    if(isset($_GET['view_transaksi'])){
+                        include("view_transaction.php");
+                    }
+                    if(isset($_GET['view_pembayaran'])){
+                        include("view_pembayaran.php");
+                    }
                     if(isset($_GET['logout'])){
                         session_destroy();
                         header("location: ../index.php");

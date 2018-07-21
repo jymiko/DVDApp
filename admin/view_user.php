@@ -26,7 +26,7 @@
                             $i = 0;
                             $get_customer = "select tbl_customer.id_customer,tbl_role.nama_role,tbl_customer.customer_name,tbl_customer.customer_email,tbl_customer.address,tbl_customer.phone_number from tbl_customer INNER join tbl_role on tbl_customer.id_role = tbl_role.id_role" ;
                             $run_query = mysqli_query($connection,$get_customer);
-                            while($row_cust = mysqli_fetch_array($run_query, MYSQLI_ASSOC)){
+                            while($row_cust = mysqli_fetch_array($run_query)){
                                 $id_customer = $row_cust['id_customer'];
                                 $cust_role = $row_cust['nama_role'];
                                 $cust_name = $row_cust['customer_name'];
@@ -43,8 +43,8 @@
                             <td><?php echo $cust_address; ?></td>
                             <td><?php echo $cust_phone; ?></td>
                             <td>
-                            <a href="index.php?edit_category=<?php echo $id_customer ?>" class="btn btn-info"><i class="fa fa-pencil"></i> Edit</a>
-                            <a href="index.php?delete_category=<?php echo $id_customer ?>" class="btn btn-danger"><i class="fa fa-trash"></i> Delete</a>
+                            <a href="index.php?edit_user=<?php echo $id_customer ?>" class="btn btn-info"><i class="fa fa-pencil"></i> Edit</a>
+                            <a href="index.php?delete_user=<?php echo $id_customer ?>" class="btn btn-danger"><i class="fa fa-trash"></i> Delete</a>
                             </td>
                         </tr>
                         <?php } ?> 
